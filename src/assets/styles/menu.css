@@ -1,0 +1,105 @@
+.menu-overplay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: scale(0);
+  transition: 0.5s;
+}
+.menu-overplay.active {
+  transform: scale(1);
+}
+.menu-overplay ul {
+  position: relative;
+}
+.menu-overplay ul li {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+.menu-overplay ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 3.5rem;
+  padding: 0 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.menu-overplay ul li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-50%) scale(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+.menu-overplay ul li a:hover:before {
+  transform: translateY(-50%) scale(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+.toggle-button {
+  z-index: 1;
+  cursor: pointer;
+  height: 4rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle-button .bar {
+  width: 1.9rem;
+  height: 2.5px;
+  background-color: #eee;
+  border-radius: 2px;
+  transition: 0.5s;
+  position: relative;
+}
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #eee;
+  transition: 0.2s;
+}
+.toggle-button:hover .bar::before {
+  transform: translateY(-10px);
+  transition: 0.5s transform;
+}
+.toggle-button:hover .bar::after {
+  transform: translateY(10px);
+  transition: 0.5s transform;
+}
+.bar::before {
+  transform: translateY(-9px);
+}
+.bar::after {
+  transform: translateY(9px);
+}
+.container-menu.active .bar {
+  transform: rotate(360deg);
+  background-color: transparent;
+}
+.container-menu.active .bar::before{
+  transform: translateY(0) rotate(45deg);
+}
+.container-menu.active .bar::after{
+  transform: translateY(0) rotate(-45deg);
+}
+/* end Full Screen Menu */

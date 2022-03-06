@@ -1,0 +1,16 @@
+:root {
+  --bg-facebook: #3b5999;
+  --bg-twister: #55acee;
+  --bg-google-plus: #dd4b39;
+  --bg-linkedin: #0077b5;
+  --bg-instagram: #e4405f;
+}
+.text-white {
+  color: white;
+}
+.bg-fackbook {
+  background-color: var(--bg-facebook);
+}
+.bg-opacity-1{
+  background-color: rgba(0, 0, 0, 0.5);
+}
