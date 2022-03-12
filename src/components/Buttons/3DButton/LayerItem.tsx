@@ -5,10 +5,6 @@ type LayerItem = {
   href?: string;
 };
 
-export const LayerSocialIcon: React.FC = ({ children }) => {
-  return <ul className="layer-container">{children}</ul>;
-};
-
 export const LayerItem: React.FC<LayerItem> = ({
   layerColor = "bg-fackbook",
   children,
@@ -25,3 +21,5 @@ export const LayerItem: React.FC<LayerItem> = ({
     </li>
   );
 };
+
+export default LayerItem;

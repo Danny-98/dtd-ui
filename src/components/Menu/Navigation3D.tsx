@@ -3,7 +3,7 @@ import { useMenu } from "./hooks";
 
 type Navigation3D = {};
 
-const Navigation3D: React.FC<Navigation3D> = ({children}) => {
+const Navigation3D: React.FC<Navigation3D> = ({ children }) => {
   const { onToggle, activeClass } = useMenu();
   return (
     <nav className={`navbar-3d ${activeClass}`}>
@@ -11,7 +11,7 @@ const Navigation3D: React.FC<Navigation3D> = ({children}) => {
       <div onClick={onToggle} className="toggle-button">
         <div className="bar"></div>
       </div>
-      
+      {children}
     </nav>
   );
 };

@@ -4,7 +4,7 @@ import { useMenu } from "../Menu/hooks";
 type SelectProps = {
   value: string;
 };
-type OptionProps = {};
+
 const Select: React.FC<SelectProps> = ({ children, value }) => {
   const { activeClass, onToggle } = useMenu();
   return (
@@ -19,10 +19,6 @@ const Select: React.FC<SelectProps> = ({ children, value }) => {
       <div className="select-options">{children}</div>
     </div>
   );
-};
-
-export const Option: React.FC<OptionProps> = ({ children }) => {
-  return <div className="select-option">{children}</div>;
 };
 
 export default Select;

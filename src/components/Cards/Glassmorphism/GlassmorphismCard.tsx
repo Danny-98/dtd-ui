@@ -8,11 +8,7 @@ type GlassmorphismCard = {
   buttonText?: string;
 };
 
-export const GlassmorphismContainer: React.FC = ({ children }) => {
-  return <div className="glassmorphism-card-container">{children}</div>;
-};
-
-export const GlassmorphismCard: React.FC<GlassmorphismCard> = ({
+const GlassmorphismCard: React.FC<GlassmorphismCard> = ({
   idNumber,
   title,
   content,
@@ -30,3 +26,4 @@ export const GlassmorphismCard: React.FC<GlassmorphismCard> = ({
     </div>
   );
 };
+export default GlassmorphismCard;
