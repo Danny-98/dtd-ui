@@ -1,6 +1,6 @@
 {
   "name": "dtd-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "UI library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

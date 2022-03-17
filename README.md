@@ -13,12 +13,14 @@ Install lib with npm
 ```
 Import css 
 ```bash
-https://raw.githubusercontent.com/Danny-98/dtd-ui/main/src/assets/styles/animations.css
-https://raw.githubusercontent.com/Danny-98/dtd-ui/main/src/assets/styles/button.css
-https://raw.githubusercontent.com/Danny-98/dtd-ui/main/src/assets/styles/cards.css
-https://raw.githubusercontent.com/Danny-98/dtd-ui/main/src/assets/styles/colors.css
-https://raw.githubusercontent.com/Danny-98/dtd-ui/main/src/assets/styles/menu.css
-https://raw.githubusercontent.com/Danny-98/dtd-ui/main/src/assets/styles/select.css
+dtd-ui/dist/styles/animations.css
+dtd-ui/dist/styles/button.css
+dtd-ui/dist/styles/cards.css
+dtd-ui/dist/styles/colors.css
+dtd-ui/dist/styles/menu.css
+dtd-ui/dist/styles/select.css
+// all css
+dtd-ui/dist/styles/styles.css
 ```
 
     
