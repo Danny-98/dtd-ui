@@ -25,14 +25,53 @@ https://raw.githubusercontent.com/Danny-98/dtd-ui/main/src/assets/styles/select.
 ## Usage/Examples
 
 ```javascript
-import Component from 'dtd-ui'
+import { GlassmorphismCard, GlassmorphismContainer } from "dtd-ui";
 
 function App() {
-  return <Component />
+  return (
+    <div className="App">
+      <GlassmorphismContainer>
+        <GlassmorphismCard idNumber="1" title="title" content="content" />
+      </GlassmorphismContainer>
+    </div>
+  );
+}
+```
+```javascript
+import { LayerItem, LayerSocialIcon } from "dtd-ui";
+
+function App() {
+  return (
+    <div className="App">
+     <LayerItem>
+        <LayerSocialIcon>Icon</LayerSocialIcon>
+      </LayerItem>
+    </div>
+  );
 }
 ```
 
+```javascript
+function App() {
+  const { onShowAlert, active, message } = useAlertNotification();
 
+  return (
+    <div className="App">
+      <button
+        onClick={() => {
+          onShowAlert({
+            status: "error",
+            message: "succress",
+          });
+        }}
+      >
+        click
+      </button>
+      <Notification message={message} active={active} />
+    </div>
+  );
+}
+```
 
 ## Demo
 

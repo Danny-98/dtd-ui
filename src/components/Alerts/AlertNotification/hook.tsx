@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export type AlertNotification = {
   status?: string;
@@ -14,7 +14,7 @@ const useAlertNotification = () => {
     message: "",
     status: "success",
   });
-  let timeKey: number = 0;
+  let timeKey: any = 0;
   const onShowAlert = (newContent: AlertNotification) => {
     if (active === "in-active") {
       setContent(newContent);
