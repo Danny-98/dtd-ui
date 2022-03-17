@@ -3,13 +3,10 @@
   width: 30vw;
   height: 50px;
 }
-
 .select-dtd-container.active::before {
   top: 22px;
-  -webkit-transform: rotate(-225deg);
-          transform: rotate(-225deg);
+  transform: rotate(-225deg);
 }
-
 .select-dtd-container::before {
   content: "";
   position: absolute;
@@ -21,13 +18,10 @@
   right: 20px;
   top: 15px;
   z-index: 100;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: 0.5s;
+  transform: rotate(-45deg);
   transition: 0.5s;
   pointer-events: none;
 }
-
 .select-dtd-container .select-textbox {
   position: absolute;
   top: 0;
@@ -36,45 +30,35 @@
   height: 100%;
   cursor: pointer;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
   border: none;
   outline: none;
+
   padding: 12px 20px;
   border-radius: 10px;
 }
-
 .select-dtd-container.active .select-options {
   display: block;
 }
-
 .select-dtd-container .select-options {
   position: absolute;
   width: 100%;
   top: 70px;
   background-color: #fff;
-  -webkit-box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   overflow: hidden;
   display: none;
 }
-
 .select-options .select-option {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 12px 20px;
   cursor: pointer;
 }
-
 .select-options .select-option:hover {
   color: #fff;
   background-color: #62bae6;
 }
-
 /* end Select */
-/*# sourceMappingURL=select.css.map */
